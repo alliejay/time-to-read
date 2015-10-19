@@ -1,0 +1,57 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+#customTime {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  display: inline-block;
+  margin: 5px auto;
+  font-family: 'Josefin Sans';
+  font-size: .7em;
+  background-color: #89BFD4;
+  transition: all 1s ease-in-out;
+}
+
+button:hover {
+  background-color: #4A8094;
+}
+
+#change {
+  height: 20px;
+}
+
+#submit {
+  height: 20px;
+}
