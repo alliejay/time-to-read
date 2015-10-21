@@ -1,22 +1,18 @@
 // 487 words on my page, not including "x minute to read"
 
-function howLong() {
-    var wpm = 230;
+function howLong(wpm) {
+    var wpm = wpm || 230;
+    if (typeof wpm !== "number") {
+    return "Sorry, must use a number";
+    } else {
     var howLongToRead = (arrayWordsOnly.length + 1)/wpm;
     howLongToRead = Math.round(howLongToRead);
     var timeToRead = document.getElementsByClassName('timeToRead');
     timeToRead[0].innerHTML = howLongToRead + " minute read";
+  }
 };
 
 howLong();
-
-// AS A PROGRAMMER, TO CHANGE WORDS READ PER MINUTE, USE THE FOLLOWING FUNCTION:
-function customhowLong(wpm) {
-    var howLongToRead = (arrayWordsOnly.length + 1)/wpm;
-    howLongToRead = Math.round(howLongToRead);
-    var timeToRead = document.getElementsByClassName('timeToRead');
-    timeToRead[0].innerHTML = howLongToRead + " minute read";
-};
 
 // ON BROWSER WPM ADJUSTMENTS
 var change = document.getElementById('change');
